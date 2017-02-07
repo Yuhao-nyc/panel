@@ -1,0 +1,134 @@
+.open-price-txt {
+    width: 25%;
+    color: #a5b2bd;
+    font-size: 12px;
+    padding: 18px 15px 6px !important;
+    border-right: 1px solid #dae0e6;
+    border-left: 1px solid #dae0e6;
+}
+.summary-open-price {
+    color: #4b5566;
+    font-size: 18px;
+    padding: 5px 15px 2px !important;
+    border: 1px solid #dae0e6;
+}
+.daily-change-txt {
+    width: 50%;
+    color: #a5b2bd;
+    font-size: 12px;
+    padding: 18px 15px 6px !important;
+    border-right: 1px solid #dae0e6;
+}
+.volume-txt {
+    width: 50%;
+    color: #a5b2bd;
+    font-size: 12px;
+    padding: 18px 15px 6px !important;
+    border-right: 1px solid #dae0e6;
+}
+.summary-daily-change {
+    width: 50%;
+    font-size: 18px;
+    padding: 6px 15px 4px !important;
+    border-right: 1px solid #dae0e6;
+    border-bottom: none;
+}
+.summary-volume {
+    width: 50%;
+    color: #629d91;
+    font-size: 18px;
+    padding: 6px 15px 4px !important;
+    border: 1px solid #dae0e6;
+    border-bottom: none;
+}
+.summary-daily-range {
+    font-size: 12px;
+    color: #a5b2bd;
+    padding: 10px 15px 4px !important;
+    border-bottom: 1px solid #dae0e6;
+}
+.summary-daily-range-l {
+    font-size: 18px;
+    display: inline-block;
+    float: left;
+}
+.summary-daily-range-c {
+    font-size: 12px;
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1px;
+    text-align: center;
+}
+.summary-daily-range-r {
+    font-size: 18px;
+    display: inline-block;
+}
+.instrument-widget-title {
+    font-size: 19px;
+    font-weight: 600;
+    color: #4b5566;
+    margin: 33px 0 13px;
+}
+.price-range-bar {
+    width: 100%;
+    margin-top: 2px;
+    color: #fff;
+    position: relative;
+}
+.price-bar-realtime {
+    width: 38%;
+    font-size: 52px;
+    color: #4b5566;
+    border-bottom: 1px solid #dae0e6;
+    padding: 2px 15px 1px;
+}
+.price-range-high-low {
+    padding: 0 6px; display: inline-block; font-size: 12px; color: #fff; margin-top: -17px; position: relative;
+}
+.price-widget-l {
+    width:50%; float: left;
+}
+.price-widget-r {
+    width: 50%;
+}
+.price-bar-current {
+    width: 0%;
+    height: 25px;
+    border-right: 5px solid #4b5566;
+    position: absolute;
+    margin-top: -3px !important;
+    z-index: 100;
+}
+.price-bar-block {
+    width: 7%;
+    height: 19px;
+    display: inline-block;
+    float: left;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .price-bar-realtime {
+      font-size: 41px;
+    }
+    .summary-open-price {
+      padding: 6px 15px 4px !important;
+    }
+    .summary-daily-range-c {
+      width: 81%;
+    }
+    .price-widget-r {
+      width: 49%;
+    }
+}
+@media (max-width: 768px) {
+    .price-widget-l {
+        width:100%;
+    }
+    .price-widget-r {
+        width: 100%;
+        border-top: 1px solid #dae0e6;
+    }
+    .open-price-txt,.summary-open-price,.volume-txt,.summary-volume {
+       border-right: none;
+    }
+}

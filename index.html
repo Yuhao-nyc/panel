@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+      <title>A simple Price Panel</title>
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+      <div class="container">
+            <br><br><br><br><br><br><br><br>
+            <h1>A simple live streaming price panel</h1>
+            <h4>Gold Price</h4>
+            <br>
+            <div class="row">
+                <div class="col-md-8">
+                    <div style="border: 1px solid #dae0e6; display:block; width:100%">
+                        <table class="price-widget-l">
+                               <colgroup>
+                                    <col width="50%">
+                                    <col width="17%">
+                                    <col width="33%">
+                               </colgroup>
+                               <tr>
+                                   <td rowspan="2" colspan="2" class="price-bar-realtime" >$<span id="XAUUSD-ask">----</span></td>
+                                   <td colspan="1" class="open-price-txt"><span class="hidden-lg-down">Previous Close</span><span class="hidden-lg-up">Prev Close</span></td>
+                               </tr>
+                               <tr>
+                                    <td class="summary-open-price" id="XAUUSD-lastclose">----</td>
+                               </tr>
+                               <tr>
+                                    <td colspan="1" class="daily-change-txt" style="border-bottom: 1px solid #ddd;">Daily Change</td>
+                                    <td colspan="2" class="volume-txt">Volume</td>
+                               </tr>
+                               <tr>
+                                    <td colspan="1" class="summary-daily-change" id="XAUUSD-pricechange">----</td>
+                                    <td colspan="2" class="summary-volume" id="XAUUSD-volume">---</td>
+                               </tr>
+                        </table>
+                        <table class="price-widget-r">
+                               <tr>
+                                    <td colspan="2" class="summary-daily-range">
+                                        <div class="summary-daily-range-l bearish-color" id="XAUUSD-lastlow">----</div>
+                                        <div class="summary-daily-range-c">Daily Range</div>
+                                        <div class="summary-daily-range-r bullish-color" id="XAUUSD-lasthigh">----</div>
+                                        <div class="price-range-bar">
+                                             <div class="price-bar-current" id="XAUUSD-pricebar">&nbsp;</div>
+
+                                             <div class="price-bar-block" style="width: 8%; background-color: #fe6981;">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #fe7e93; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #fe94a5; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #fea9b7; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #ffbfc9; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #ffd4db; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #ffeaed; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #e7f4fc; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #cfeafa; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #b7dff7; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #9fd5f4; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #87caf1; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #6fc0ef; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="width: 8%; background-color: #57b5ec;">&nbsp;</div>
+                                        </div>
+                                        <div class="pull-left price-range-high-low">Low</div>
+                                        <div class="pull-right price-range-high-low">High</div>
+                                    </td>
+                               </tr>
+                               <tr>
+                                    <td colspan="2" class="summary-daily-range" style="border-bottom: none;">
+                                        <div class="summary-daily-range-l bearish-color" id="XAUUSD-ftweeklow">----</div>
+                                        <div class="summary-daily-range-c">52 Week Range</div>
+                                        <div class="summary-daily-range-r bullish-color" id="XAUUSD-ftweekhigh">----</div>
+                                        <div class="price-range-bar">
+                                             <div class="price-bar-current" id="XAUUSD-ftpricebar">&nbsp;</div>
+
+                                             <div class="price-bar-block" style="width: 8%; background-color: #fe6981;">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #fe7e93; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #fe94a5; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #fea9b7; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #ffbfc9; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #ffd4db; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #ffeaed; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #e7f4fc; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #cfeafa; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #b7dff7; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #9fd5f4; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #87caf1; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="background-color: #6fc0ef; ">&nbsp;</div>
+                                             <div class="price-bar-block" style="width: 8%; background-color: #57b5ec;">&nbsp;</div>
+                                        </div>
+                                        <div class="pull-left price-range-high-low">Low</div>
+                                        <div class="pull-right price-range-high-low">High</div>
+                                    </td>
+                               </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+
+            </div>
+      </div>
+
+      <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
